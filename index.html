@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tennis Forehand Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">Forehand Lab</span>
+        <div class="nav-links">
+          <a href="#overview">개요</a>
+          <a href="#library">선수 라이브러리</a>
+          <a href="#takeback">테이크백 분류</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">프로 선수 기반 테니스 스트로크 데이터베이스</p>
+          <h1>테이크백과 그립으로 정리한 차세대 포핸드 라이브러리</h1>
+          <p class="subtitle">
+            모던 포핸드, 차세대 포핸드, 클래식 스타일을 한눈에 비교하고 각 선수의 그립과
+            테이크백 습관을 분석하세요.
+          </p>
+          <button class="primary">라이브러리 둘러보기</button>
+        </div>
+        <div class="hero-card">
+          <h2>오늘의 인사이트</h2>
+          <p>
+            웨스턴 그립을 쓰는 선수들은 회전량이 증가하지만, 차세대 포핸드는 빠른 준비를
+            위해 컴팩트한 테이크백을 선택하는 경향이 있습니다.
+          </p>
+          <div class="tag-row">
+            <span>웨스턴 그립</span>
+            <span>모던 테이크백</span>
+            <span>공격적인 스윙</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview" class="section">
+        <div class="section-header">
+          <h2>분석 프레임</h2>
+          <p>
+            각 선수의 포핸드를 테이크백 유형, 그립, 타점 높이, 스윙 궤적으로 정리합니다.
+            데이터는 영상 분석 기준으로 업데이트 됩니다.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="info-card">
+            <h3>테이크백 유형</h3>
+            <p>모던, 차세대, 클래식 세 가지 기준으로 준비 동작을 분류합니다.</p>
+          </article>
+          <article class="info-card">
+            <h3>그립 분류</h3>
+            <p>이스턴, 세미웨스턴, 웨스턴으로 나누어 회전과 타점 특성을 설명합니다.</p>
+          </article>
+          <article class="info-card">
+            <h3>상황별 패턴</h3>
+            <p>공격형과 수비형 스윙을 구분해 랠리 상황별 최적 해답을 제시합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="library" class="section alt">
+        <div class="section-header">
+          <h2>프로 선수 라이브러리</h2>
+          <p>테이크백과 그립을 기준으로 선수들의 포핸드 스타일을 비교해보세요.</p>
+        </div>
+        <div class="filter-bar">
+          <div>
+            <h4>테이크백</h4>
+            <div class="pill-group">
+              <span class="pill active">모던</span>
+              <span class="pill">차세대</span>
+              <span class="pill">클래식</span>
+            </div>
+          </div>
+          <div>
+            <h4>그립</h4>
+            <div class="pill-group">
+              <span class="pill active">세미웨스턴</span>
+              <span class="pill">이스턴</span>
+              <span class="pill">웨스턴</span>
+            </div>
+          </div>
+          <div class="filter-note">
+            <p>선수 카드를 클릭하면 상세 설명 페이지로 확장될 예정입니다.</p>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <article class="player-card">
+            <div class="player-header">
+              <h3>카를로스 알카라스</h3>
+              <span class="level">차세대</span>
+            </div>
+            <p>컴팩트한 테이크백과 빠른 발리 준비. 세미웨스턴 그립 기반의 폭발적인 스윙.</p>
+            <div class="meta">
+              <span>세미웨스턴</span>
+              <span>높은 타점</span>
+              <span>폭발적인 회전</span>
+            </div>
+          </article>
+          <article class="player-card">
+            <div class="player-header">
+              <h3>이카 시비옹테크</h3>
+              <span class="level">모던</span>
+            </div>
+            <p>테이크백이 길지만 타점을 앞에 두어 공격적인 플랫 + 탑스핀 비율을 유지.</p>
+            <div class="meta">
+              <span>세미웨스턴</span>
+              <span>앞쪽 타점</span>
+              <span>압박형 리턴</span>
+            </div>
+          </article>
+          <article class="player-card">
+            <div class="player-header">
+              <h3>로저 페더러</h3>
+              <span class="level">클래식</span>
+            </div>
+            <p>이스턴 그립과 일체형 테이크백으로 다양한 궤적을 만들어내는 올코트형 포핸드.</p>
+            <div class="meta">
+              <span>이스턴</span>
+              <span>낮은 타점</span>
+              <span>변화형 스윙</span>
+            </div>
+          </article>
+          <article class="player-card">
+            <div class="player-header">
+              <h3>라파엘 나달</h3>
+              <span class="level">모던</span>
+            </div>
+            <p>웨스턴 그립 기반의 극단적 탑스핀. 높은 스윙 궤적으로 점유율을 높임.</p>
+            <div class="meta">
+              <span>웨스턴</span>
+              <span>높은 타점</span>
+              <span>극강 탑스핀</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="takeback" class="section">
+        <div class="section-header">
+          <h2>테이크백 유형 한눈에 보기</h2>
+          <p>각 테이크백은 스윙 준비 속도와 궤도에서 차이를 보입니다.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>모던 테이크백</h3>
+            <p>라켓 헤드를 깊게 떨어뜨려 회전량을 극대화하는 형태.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>차세대 테이크백</h3>
+            <p>컴팩트한 준비로 공격 전환을 빠르게 만드는 형태.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>클래식 테이크백</h3>
+            <p>일체형 테이크백과 짧은 스윙으로 타점 컨트롤을 강조.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>Forehand Lab</h4>
+        <p>선수별 포핸드 데이터를 정리하고 학습하기 위한 개인 프로젝트입니다.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">분석 프레임</a>
+        <a href="#library">선수 라이브러리</a>
+        <a href="#takeback">테이크백 분류</a>
+      </div>
+    </footer>
+  </body>
+</html>
